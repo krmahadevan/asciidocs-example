@@ -1,0 +1,12 @@
+.ant-targets*
+.classpath
+.gradle
+.idea
+*.ipr
+*.iws
+*.iml
+.project
+.settings
+/_eclipse/
+target
+.DS_Store

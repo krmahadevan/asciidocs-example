@@ -1,0 +1,16 @@
+= TestNG Documentation
+:sectnums:
+:toc:                                                               
+:toclevels: 4                                                       
+:toc-title: Table Of Contents
+:experimental:                                                      
+:description: TestNG user documentation
+:keywords: TestNG
+:imagesdir: ./img                                                   
+
+include::welcome.adoc[]
+
+include::first_section.adoc[]
+
+include::second_section.adoc[]
+
