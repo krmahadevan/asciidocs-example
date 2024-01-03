@@ -7,10 +7,30 @@
 :description: TestNG user documentation
 :keywords: TestNG
 :imagesdir: ./img                                                   
+:docinfodir: ./docinfos
+:docinfo:shared
 
 include::welcome.adoc[]
 
-include::first_section.adoc[]
+include::download.adoc[]
 
-include::second_section.adoc[]
+include::documentation.adoc[]
+
+include::migrating_from_junit.adoc[]
+
+include::javadocs.adoc[]
+
+include::eclipse.adoc[]
+
+include::idea.adoc[]
+
+include::maven.adoc[]
+
+include::ant.adoc[]
+
+include::miscellaneous.adoc[]
+
+include::book.adoc[]
+
+include::kobalt.adoc[]
 

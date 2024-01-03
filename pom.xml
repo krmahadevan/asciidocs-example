@@ -35,14 +35,47 @@
                         <configuration>
                             <outputDirectory>${project.build.directory}/html</outputDirectory>
                             <attributes>
-                                <stylesheet>readthedocs.css</stylesheet>
+<!--                                <stylesheet>dark.css</stylesheet>-->
                                 <source-highlighter>prettify</source-highlighter>
-                                <imagesdir>./images</imagesdir>
+                                <imagesdir>pics</imagesdir>
                                 <toc>left</toc>
                                 <icons>font</icons>
+                                <linkcss>true</linkcss>
+                                <docinfo>shared</docinfo>
                             </attributes>
                             <backend>html5</backend>
-                            <embedAssets>true</embedAssets>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>2.6</version>
+                <executions>
+                    <execution>
+                        <id>copy-asciidoc-resources</id>
+                        <phase>process-resources</phase>
+                        <goals>
+                            <goal>copy-resources</goal>
+                        </goals>
+                        <configuration>
+                            <resources>
+                                <resource>
+                                    <directory>src/main/resources/docinfos</directory>
+                                    <includes>
+                                        <include>**/*.html</include>
+                                    </includes>
+                                </resource>
+                                <resource>
+                                    <directory>src/main/resources/tocbot-3_0_2</directory>
+                                    <includes>
+                                        <include>**/*.css</include>
+                                        <include>**/*.js</include>
+                                    </includes>
+                                </resource>
+                            </resources>
+                            <outputDirectory>${project.build.directory}/html</outputDirectory>
                         </configuration>
                     </execution>
                 </executions>

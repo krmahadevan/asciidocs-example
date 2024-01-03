@@ -1,0 +1,3 @@
+== Javadocs
+
+Please refer https://javadoc.io/doc/org.testng/testng/latest/index.html[here] for detailed javadocs.
