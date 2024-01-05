@@ -72,7 +72,7 @@ th {
 
 td {
     background-color: var(--maincolor);
-    color: var(--linkcoloralternate) !important
+    color: var(--primarycolor) !important
 }
 
 
