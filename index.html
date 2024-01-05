@@ -8,7 +8,7 @@
 <meta name="description" content="TestNG user documentation">
 <meta name="keywords" content="TestNG">
 <title>TestNG Documentation</title>
-<link rel="stylesheet" href="./readthedocs.css">
+<link rel="stylesheet" href="./dark.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.css">
 </head>
@@ -46,53 +46,99 @@
 </li>
 </ul>
 </li>
-<li><a href="#_migrating_from_junit">3. Migrating from JUnit</a>
+<li><a href="#_testng_documentation">3. TestNG Documentation</a>
 <ul class="sectlevel2">
-<li><a href="#_using_eclipse">3.1. Using Eclipse</a></li>
-<li><a href="#_asserts">3.2. Asserts</a></li>
-<li><a href="#_running_junit_tests">3.3. Running JUnit Tests</a></li>
-<li><a href="#_related_reading">3.4. Related reading</a></li>
+<li><a href="#_introduction">3.1. Introduction</a></li>
+<li><a href="#_annotations">3.2. Annotations</a></li>
 </ul>
 </li>
-<li><a href="#_javadocs">4. Javadocs</a></li>
-<li><a href="#_eclipse_plug_in_2">5. Eclipse plug-in</a>
+<li><a href="#_migrating_from_junit">4. Migrating from JUnit</a>
 <ul class="sectlevel2">
-<li><a href="#_installation">5.1. Installation</a></li>
-<li><a href="#_creating_a_testng_class">5.2. Creating a TestNG class</a></li>
-<li><a href="#_launch_configuration">5.3. Launch configuration</a>
+<li><a href="#_using_eclipse">4.1. Using Eclipse</a></li>
+<li><a href="#_asserts">4.2. Asserts</a></li>
+<li><a href="#_running_junit_tests">4.3. Running JUnit Tests</a></li>
+<li><a href="#_related_reading">4.4. Related reading</a></li>
+</ul>
+</li>
+<li><a href="#_javadocs">5. Javadocs</a></li>
+<li><a href="#_eclipse_plug_in_2">6. Eclipse plug-in</a>
+<ul class="sectlevel2">
+<li><a href="#_installation">6.1. Installation</a></li>
+<li><a href="#_creating_a_testng_class">6.2. Creating a TestNG class</a></li>
+<li><a href="#_launch_configuration">6.3. Launch configuration</a>
 <ul class="sectlevel3">
-<li><a href="#_from_a_class_file">5.3.1. From a class file</a></li>
-<li><a href="#_from_groups">5.3.2. From groups</a></li>
-<li><a href="#_from_a_definition_file">5.3.3. From a definition file</a></li>
-<li><a href="#_from_a_method">5.3.4. From a method</a></li>
-<li><a href="#_specifying_listeners_and_other_settings">5.3.5. Specifying listeners and other settings</a></li>
+<li><a href="#_from_a_class_file">6.3.1. From a class file</a></li>
+<li><a href="#_from_groups">6.3.2. From groups</a></li>
+<li><a href="#_from_a_definition_file">6.3.3. From a definition file</a></li>
+<li><a href="#_from_a_method">6.3.4. From a method</a></li>
+<li><a href="#_specifying_listeners_and_other_settings">6.3.5. Specifying listeners and other settings</a></li>
 </ul>
 </li>
-<li><a href="#_viewing_the_test_results">5.4. Viewing the test results</a></li>
-<li><a href="#_search">5.5. Search</a></li>
-<li><a href="#_summary">5.6. Summary</a></li>
-<li><a href="#_converting_junit_tests">5.7. Converting JUnit tests</a></li>
-<li><a href="#_quick_fixes">5.8. Quick fixes</a></li>
-<li><a href="#_preferences_and_properties">5.9. Preferences and Properties</a>
+<li><a href="#_viewing_the_test_results">6.4. Viewing the test results</a></li>
+<li><a href="#_search">6.5. Search</a></li>
+<li><a href="#_summary">6.6. Summary</a></li>
+<li><a href="#_converting_junit_tests">6.7. Converting JUnit tests</a></li>
+<li><a href="#_quick_fixes">6.8. Quick fixes</a></li>
+<li><a href="#_preferences_and_properties">6.9. Preferences and Properties</a>
 <ul class="sectlevel3">
-<li><a href="#_workbench_preferences">5.9.1. Workbench Preferences</a></li>
-<li><a href="#_project_properties">5.9.2. Project Properties</a></li>
+<li><a href="#_workbench_preferences">6.9.1. Workbench Preferences</a></li>
+<li><a href="#_project_properties">6.9.2. Project Properties</a></li>
 </ul>
 </li>
-<li><a href="#_m2e_integration">5.10. M2E Integration</a></li>
+<li><a href="#_m2e_integration">6.10. M2E Integration</a></li>
 </ul>
 </li>
-<li><a href="#_testng_idea_plug_in">6. TestNG IDEA Plug-in</a>
+<li><a href="#_testng_idea_plug_in">7. TestNG IDEA Plug-in</a>
 <ul class="sectlevel2">
-<li><a href="#_creating_a_testng_rundebug_configuration">6.1. Creating a TestNG Run/Debug configuration</a></li>
+<li><a href="#_creating_a_testng_rundebug_configuration">7.1. Creating a TestNG Run/Debug configuration</a></li>
 </ul>
 </li>
-<li><a href="#_testng_maven_plug_ins">7. TestNG Maven plug-ins</a>
+<li><a href="#_testng_maven_plug_ins">8. TestNG Maven plug-ins</a>
 <ul class="sectlevel2">
-<li><a href="#_specifying_your_pom_xml">7.1. Specifying your pom.xml</a></li>
-<li><a href="#_sample_reports">7.2. Sample reports</a></li>
+<li><a href="#_specifying_your_pom_xml">8.1. Specifying your pom.xml</a></li>
+<li><a href="#_sample_reports">8.2. Sample reports</a></li>
 </ul>
 </li>
+<li><a href="#_testng_ant_task">9. TestNG Ant Task</a>
+<ul class="sectlevel2">
+<li><a href="#_testng_modes">9.1. TestNG modes</a></li>
+<li><a href="#_nested_elements">9.2. Nested Elements</a>
+<ul class="sectlevel3">
+<li><a href="#_classpath">9.2.1. classpath</a></li>
+<li><a href="#_bootclasspath">9.2.2. bootclasspath</a></li>
+<li><a href="#_xmlfileset">9.2.3. xmlfileset</a></li>
+<li><a href="#_classfileset">9.2.4. classfileset</a></li>
+<li><a href="#_jvmarg">9.2.5. jvmarg</a></li>
+<li><a href="#_sysproperty">9.2.6. sysproperty</a></li>
+<li><a href="#_propertyset">9.2.7. propertyset</a></li>
+<li><a href="#_reporter">9.2.8. reporter</a></li>
+<li><a href="#_env">9.2.9. env</a></li>
+</ul>
+</li>
+<li><a href="#_examples">9.3. Examples</a></li>
+</ul>
+</li>
+<li><a href="#_more_testng_reading">10. MORE TESTNG READING</a>
+<ul class="sectlevel2">
+<li><a href="#_articles_and_presentations">10.1. Articles and presentations</a>
+<ul class="sectlevel3">
+<li><a href="#_english">10.1.1. English</a></li>
+<li><a href="#_french">10.1.2. French</a></li>
+<li><a href="#_german">10.1.3. German</a></li>
+</ul>
+</li>
+<li><a href="#_contributors">10.2. CONTRIBUTORS</a></li>
+<li><a href="#_special_thanks">10.3. SPECIAL THANKS</a></li>
+<li><a href="#_testimonies">10.4. TESTIMONIES</a></li>
+</ul>
+</li>
+<li><a href="#_the_testng_textbook_next_generation_java_testing">11. The TestNG TextBook: Next Generation Java Testing</a>
+<ul class="sectlevel2">
+<li><a href="#_book_description">11.1. Book Description</a></li>
+<li><a href="#_about_the_author">11.2. About the Author</a></li>
+</ul>
+</li>
+<li><a href="#_kobalt_a_modern_versatile_build_system">12. Kobalt A modern, versatile build system</a></li>
 </ul>
 </div>
 </div>
@@ -444,16 +490,311 @@ $ ./gradlew build</code></pre>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_migrating_from_junit">3. Migrating from JUnit</h2>
+<h2 id="_testng_documentation">3. TestNG Documentation</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_using_eclipse">3.1. Using Eclipse</h3>
+<h3 id="_introduction">3.1. Introduction</h3>
+<div class="paragraph">
+<p>TestNG is a testing framework designed to simplify a broad range of testing needs, from unit testing (testing a class in isolation of the others) to integration testing (testing entire systems made of several classes, several packages and even several external frameworks, such as application servers).</p>
+</div>
+<div class="paragraph">
+<p>Writing a test is typically a three-step process:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Write the business logic of your test and insert <a href="annotations.html">TestNG annotations</a> in your code.</p>
+</li>
+<li>
+<p>Add the information about your test (e.g. the class name, the groups you wish to run, etc&#8230;&#8203;) in a testng.xml file or in <code>build.xml</code>.</p>
+</li>
+<li>
+<p><a href="../ant.html">Run TestNG</a>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>You can find a quick example on the <a href="../welcome.html">Welcome page</a>.</p>
+</div>
+<div class="paragraph">
+<p>The concepts used in this documentation are as follows:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>A suite is represented by one XML file. It can contain one or more tests and is defined by the <code>&lt;suite&gt;</code> tag.</p>
+</li>
+<li>
+<p>A test is represented by &lt;test&gt; and can contain one or more TestNG classes.</p>
+</li>
+<li>
+<p>A TestNG class is a Java class that contains at least one TestNG annotation. It is represented by the &lt;class&gt; tag and can contain one or more test methods.</p>
+</li>
+<li>
+<p>A test method is a Java method annotated by <code>@Test</code> in your source.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>A TestNG test can be configured by <code>@BeforeXXX</code> and <code>@AfterXXX</code> annotations which allows to perform some Java logic before and after a certain point, these points being either of the items listed above.</p>
+</div>
+<div class="paragraph">
+<p>The rest of this manual will explain the following:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>A list of all the annotations with a brief explanation. This will give you an idea of the various functionalities offered by TestNG but you will probably want to consult the section dedicated to each of these annotations to learn the details.</p>
+</li>
+<li>
+<p>A description of the testng.xml file, its syntax and what you can specify in it.</p>
+</li>
+<li>
+<p>A detailed list of the various features and how to use them with a combination of annotations and testng.xml.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_annotations">3.2. Annotations</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Annotations</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Description</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p><code>@BeforeSuite</code></p>
+</li>
+<li>
+<p><code>@AfterSuite</code></p>
+</li>
+<li>
+<p><code>@BeforeTest</code></p>
+</li>
+<li>
+<p><code>@AfterTest</code></p>
+</li>
+<li>
+<p><code>@BeforeGroups</code></p>
+</li>
+<li>
+<p><code>@AfterGroups</code></p>
+</li>
+<li>
+<p><code>@BeforeClass</code></p>
+</li>
+<li>
+<p><code>@AfterClass</code></p>
+</li>
+<li>
+<p><code>@BeforeMethod</code></p>
+</li>
+<li>
+<p><code>@AfterMethod</code></p>
+</li>
+</ul>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Configuration information for a TestNG class:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>@BeforeSuite</code>: The annotated method will be run before all tests in this suite have run.</p>
+</li>
+<li>
+<p><code>@AfterSuite</code>: The annotated method will be run after all tests in this suite have run.</p>
+</li>
+<li>
+<p><code>@BeforeTest</code>: The annotated method will be run before any test method belonging to the classes inside the &lt;test&gt; tag is run.</p>
+</li>
+<li>
+<p><code>@AfterTest</code>: The annotated method will be run after all the test methods belonging to the classes inside the &lt;test&gt; tag have run.</p>
+</li>
+<li>
+<p><code>@BeforeGroups</code>: The list of groups that this configuration method will run before. This method is guaranteed to run shortly before the first test method that belongs to any of these groups is invoked.</p>
+</li>
+<li>
+<p><code>@AfterGroups</code>: The list of groups that this configuration method will run after. This method is guaranteed to run shortly after the last test method that belongs to any of these groups is invoked.</p>
+</li>
+<li>
+<p><code>@BeforeClass</code>: The annotated method will be run before the first test method in the current class is invoked.</p>
+</li>
+<li>
+<p><code>@AfterClass</code>: The annotated method will be run after all the test methods in the current class have been run.</p>
+</li>
+<li>
+<p><code>@BeforeMethod</code>: The annotated method will be run before each test method.</p>
+</li>
+<li>
+<p><code>@AfterMethod</code>: The annotated method will be run after each test method.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Behaviour of annotations in superclass of a TestNG class</strong></p>
+</div>
+<div class="paragraph">
+<p>The annotations above will also be honored (inherited) when placed on a superclass of a TestNG class. This is useful for example to centralize test setup for multiple test classes in a common superclass.</p>
+</div>
+<div class="paragraph">
+<p>In that case, TestNG guarantees that the "@Before" methods are executed in inheritance order (highest superclass first, then going down the inheritance chain), and the "@After" methods in reverse order (going up the inheritance chain).</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>alwaysRun</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">For before methods (beforeSuite, beforeTest, beforeTestClass and beforeTestMethod, but not beforeGroups): If set to true, this configuration method will be run regardless of what groups it belongs to.
+For after methods (afterSuite, afterClass, &#8230;&#8203;): If set to true, this configuration method will be run even if one or more methods invoked previously failed or was skipped.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>dependsOnGroups</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The list of groups this method depends on.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>dependsOnMethods</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The list of methods this method depends on.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>enabled</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Whether methods on this class/method are enabled.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>groups</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The list of groups this class/method belongs to.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>inheritGroups</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">If true, this method will belong to groups specified in the @Test annotation at the class level.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>onlyForGroups</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Only for @BeforeMethod and @AfterMethod. If specified, then this setup/teardown method will only be invoked if the corresponding test method belongs to one of the listed groups.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>@DataProvider</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Marks a method as supplying data for a test method. The annotated method must return an <code>Object[][]</code> where each <code>Object[]</code> can be assigned the parameter list of the test method. The @Test method that wants to receive data from this <code>DataProvider</code> needs to use a dataProvider name equals to the name of this annotation.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>name</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The name of this data provider. If it&#8217;s not supplied, the name of this data provider will automatically be set to the name of the method.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>parallel</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">If set to true, tests generated using this data provider are run in parallel. Default value is false.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>@Factory</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Marks a method as a factory that returns objects that will be used by TestNG as Test classes. The method must return <code>Object[]</code>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>@Listeners</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Defines listeners on a test class.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>value</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">An array of classes that extend org.testng.ITestNGListener.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>@Parameters</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Describes how to pass parameters to a @Test method.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>value</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The list of variables used to fill the parameters of this method.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>@Test</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Marks a class or a method as part of the test.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>alwaysRun</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">If set to true, this test method will always be run even if it depends on a method that failed.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>dataProvider</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The name of the data provider for this test method.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>dataProviderClass</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The class where to look for the data provider. If not specified, the data provider will be looked on the class of the current test method or one of its base classes. If this attribute is specified, the data provider method needs to be static on the specified class.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>dependsOnGroups</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The list of groups this method depends on.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>dependsOnMethods</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The list of methods this method depends on.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>description</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The description for this method.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>enabled</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Whether methods on this class/method are enabled.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>expectedExceptions</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The list of exceptions that a test method is expected to throw. If no exception or a different than one on this list is thrown, this test will be marked a failure.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>groups</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The list of groups this class/method belongs to.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>invocationCount</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The number of times this method should be invoked.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>invocationTimeOut</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The maximum number of milliseconds this test should take for the cumulated time of all the invocationcounts. This attribute will be ignored if invocationCount is not specified.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>priority</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The priority for this test method. Lower priorities will be scheduled first.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>successPercentage</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The percentage of success expected from this method</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>singleThreaded</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">If set to true, all the methods on this test class are guaranteed to run in the same thread, even if the tests are currently being run with <code>parallel="methods"</code>. This attribute can only be used at the class level and it will be ignored if used at the method level. Note: this attribute used to be called sequential (now deprecated).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>timeOut</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The maximum number of milliseconds this test should take.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>threadPoolSize</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The size of the thread pool for this method. The method will be invoked from multiple threads as specified by invocationCount.
+NOTE: this attribute is ignored if invocationCount is not specified</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_migrating_from_junit">4. Migrating from JUnit</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_using_eclipse">4.1. Using Eclipse</h3>
 <div class="paragraph">
 <p>The easiest way to convert your JUnit tests to TestNG is to use the Eclipse TestNG plug-in refactoring support. You will find a full description of its features in the <a href="https://testng.org/doc/eclipse.html#eclipse-quickfix">Eclipse section</a>.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_asserts">3.2. Asserts</h3>
+<h3 id="_asserts">4.2. Asserts</h3>
 <div class="paragraph">
 <p>Note that the class <code>org.testng.Assert</code> uses a different argument ordering than the ones used by JUnit. If you are porting code that uses JUnit&#8217;s asserts, you might want to us a static import of that class:</p>
 </div>
@@ -464,7 +805,7 @@ $ ./gradlew build</code></pre>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_running_junit_tests">3.3. Running JUnit Tests</h3>
+<h3 id="_running_junit_tests">4.3. Running JUnit Tests</h3>
 <div class="paragraph">
 <p>TestNG can automatically recognize and run JUnit tests, so you can use TestNG as a runner for all your existing tests and write new tests using TestNG.</p>
 </div>
@@ -522,7 +863,7 @@ $ ./gradlew build</code></pre>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_related_reading">3.4. Related reading</h3>
+<h3 id="_related_reading">4.4. Related reading</h3>
 <div class="paragraph">
 <p><a href="https://web.archive.org/web/20150214034607/http://developers.opengamma.com/blog/2011/04/04/converting-opengamma-junit-testng">Here</a> is the detailed report of a company that successfully converted a large codebase of JUnit 4 tests over to TestNG.</p>
 </div>
@@ -530,7 +871,7 @@ $ ./gradlew build</code></pre>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_javadocs">4. Javadocs</h2>
+<h2 id="_javadocs">5. Javadocs</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Please refer <a href="https://javadoc.io/doc/org.testng/testng/latest/index.html">here</a> for detailed javadocs.</p>
@@ -538,7 +879,7 @@ $ ./gradlew build</code></pre>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_eclipse_plug_in_2">5. Eclipse plug-in</h2>
+<h2 id="_eclipse_plug_in_2">6. Eclipse plug-in</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>The TestNG Eclipse plug-in allows you to run your TestNG tests from Eclipse and easily monitor their execution and their output.</p>
@@ -547,7 +888,7 @@ $ ./gradlew build</code></pre>
 <p>It has its own project repository called <a href="https://github.com/testng-team/testng-eclipse">testng-eclipse</a>.</p>
 </div>
 <div class="sect2">
-<h3 id="_installation">5.1. Installation</h3>
+<h3 id="_installation">6.1. Installation</h3>
 <div class="paragraph">
 <p>Follow the instructions to install the <a href="https://testng.org/doc/download.html">plug-in</a>.</p>
 </div>
@@ -564,7 +905,7 @@ $ ./gradlew build</code></pre>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_creating_a_testng_class">5.2. Creating a TestNG class</h3>
+<h3 id="_creating_a_testng_class">6.2. Creating a TestNG class</h3>
 <div class="paragraph">
 <p>To create a new TestNG class, select the menu <code>File / New / TestNG</code>:</p>
 </div>
@@ -589,7 +930,7 @@ $ ./gradlew build</code></pre>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_launch_configuration">5.3. Launch configuration</h3>
+<h3 id="_launch_configuration">6.3. Launch configuration</h3>
 <div class="paragraph">
 <p>Once you have created classes that contain TestNG annotations and/or one or more testng.xml files, you can create a TestNG Launch Configuration.  Select the <code>Run / Run&#8230;&#8203; (or Run / Debug&#8230;&#8203;)</code> menu and create a new TestNG configuration:</p>
 </div>
@@ -639,7 +980,7 @@ $ ./gradlew build</code></pre>
 <p>Then you choose to launch your TestNG tests in the following ways:</p>
 </div>
 <div class="sect3">
-<h4 id="_from_a_class_file">5.3.1. From a class file</h4>
+<h4 id="_from_a_class_file">6.3.1. From a class file</h4>
 <div class="paragraph">
 <p>Make sure the box near Class is checked and then pick a class from your project.  You can click on the Browse&#8230;&#8203; button and pick it directly from a list.  This list only contains classes that contain TestNG annotations:</p>
 </div>
@@ -650,7 +991,7 @@ $ ./gradlew build</code></pre>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_from_groups">5.3.2. From groups</h4>
+<h4 id="_from_groups">6.3.2. From groups</h4>
 <div class="paragraph">
 <p>If you only want to launch one or several groups, you can type them in the text field or pick them from a list by clicking on the Browse&#8230;&#8203; button</p>
 </div>
@@ -661,7 +1002,7 @@ $ ./gradlew build</code></pre>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_from_a_definition_file">5.3.3. From a definition file</h4>
+<h4 id="_from_a_definition_file">6.3.3. From a definition file</h4>
 <div class="paragraph">
 <p>Finally, you can select a suite definition from your project. It doesn&#8217;t have to be named testng.xml, the plug-in will automatically identify all the applicable TestNG XML files in your project:</p>
 </div>
@@ -675,7 +1016,7 @@ $ ./gradlew build</code></pre>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_from_a_method">5.3.4. From a method</h4>
+<h4 id="_from_a_method">6.3.4. From a method</h4>
 <div class="paragraph">
 <p>This launch isn&#8217;t accomplished from the Launch dialog but directly from your Outline view:</p>
 </div>
@@ -695,7 +1036,7 @@ $ ./gradlew build</code></pre>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_specifying_listeners_and_other_settings">5.3.5. Specifying listeners and other settings</h4>
+<h4 id="_specifying_listeners_and_other_settings">6.3.5. Specifying listeners and other settings</h4>
 <div class="paragraph">
 <p>As you saw above, the plug-in will let you start tests in many different ways: from an XML file, from a method, a class, etc&#8230;&#8203; When you are running an XML file, you can specify all the settings you want for this run in the XML file, but what if you want to run a package in parallel mode with specific listeners? How can you configure the settings for all the launches that are not done from an XML file?</p>
 </div>
@@ -713,7 +1054,7 @@ $ ./gradlew build</code></pre>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_viewing_the_test_results">5.4. Viewing the test results</h3>
+<h3 id="_viewing_the_test_results">6.4. Viewing the test results</h3>
 <div class="imageblock">
 <div class="content">
 <img src="pics/success.png" alt="success">
@@ -735,7 +1076,7 @@ $ ./gradlew build</code></pre>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_search">5.5. Search</h3>
+<h3 id="_search">6.5. Search</h3>
 <div class="imageblock">
 <div class="content">
 <img src="pics/search.png" alt="search">
@@ -746,7 +1087,7 @@ $ ./gradlew build</code></pre>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_summary">5.6. Summary</h3>
+<h3 id="_summary">6.6. Summary</h3>
 <div class="imageblock">
 <div class="content">
 <img src="pics/summary1.png" alt="summary1">
@@ -765,7 +1106,7 @@ $ ./gradlew build</code></pre>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_converting_junit_tests">5.7. Converting JUnit tests</h3>
+<h3 id="_converting_junit_tests">6.7. Converting JUnit tests</h3>
 <div class="paragraph">
 <p>You can easily convert JUnit 3 and JUnit 4 tests to TestNG.</p>
 </div>
@@ -825,7 +1166,7 @@ $ ./gradlew build</code></pre>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_quick_fixes">5.8. Quick fixes</h3>
+<h3 id="_quick_fixes">6.8. Quick fixes</h3>
 <div class="paragraph">
 <p>The TestNG Eclipse plug-in offers several quick fixes while you are editing a TestNG class (accessible with Ctrl-1 on Windows/Linux and ⌘-1 on Mac OS):</p>
 </div>
@@ -843,9 +1184,9 @@ $ ./gradlew build</code></pre>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_preferences_and_properties">5.9. Preferences and Properties</h3>
+<h3 id="_preferences_and_properties">6.9. Preferences and Properties</h3>
 <div class="sect3">
-<h4 id="_workbench_preferences">5.9.1. Workbench Preferences</h4>
+<h4 id="_workbench_preferences">6.9.1. Workbench Preferences</h4>
 <div class="paragraph">
 <p>TestNG workbench preferences:</p>
 </div>
@@ -886,7 +1227,7 @@ $ ./gradlew build</code></pre>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_project_properties">5.9.2. Project Properties</h4>
+<h4 id="_project_properties">6.9.2. Project Properties</h4>
 <div class="paragraph">
 <p>Project level properties:</p>
 </div>
@@ -917,7 +1258,7 @@ $ ./gradlew build</code></pre>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_m2e_integration">5.10. M2E Integration</h3>
+<h3 id="_m2e_integration">6.10. M2E Integration</h3>
 <div class="paragraph">
 <p>The (optional) TestNG M2E Integration plug-in was introduced in 6.9.10. It allows you to run your tests with System Properties or JVM settings, which are defined by <code>maven-surefire-plugin</code> or <code>maven-failsafe-plugin</code> of <code>pom.xml</code>, to be appended to the runtime TestNG process. Once this plugin installed, you can see a dedicated preference page (workspace level settings):</p>
 </div>
@@ -1003,7 +1344,7 @@ If your maven-surefire-plugin is defined in a Maven profile, you will need to se
 </div>
 </div>
 <div class="sect1">
-<h2 id="_testng_idea_plug_in">6. TestNG IDEA Plug-in</h2>
+<h2 id="_testng_idea_plug_in">7. TestNG IDEA Plug-in</h2>
 <div class="sectionbody">
 <div class="imageblock">
 <div class="content">
@@ -1014,7 +1355,7 @@ If your maven-surefire-plugin is defined in a Maven profile, you will need to se
 <p>TestNG is bundled in IDEA</p>
 </div>
 <div class="sect2">
-<h3 id="_creating_a_testng_rundebug_configuration">6.1. Creating a TestNG Run/Debug configuration</h3>
+<h3 id="_creating_a_testng_rundebug_configuration">7.1. Creating a TestNG Run/Debug configuration</h3>
 <div class="paragraph">
 <p>Once you have installed the plug-in and restarted IDEA, and have some TestNG classes you would like to run, simply open the Run/Debug window. You will see a TestNG tab, where you can add a configuration.</p>
 </div>
@@ -1052,7 +1393,7 @@ If your maven-surefire-plugin is defined in a Maven profile, you will need to se
 </div>
 </div>
 <div class="sect1">
-<h2 id="_testng_maven_plug_ins">7. TestNG Maven plug-ins</h2>
+<h2 id="_testng_maven_plug_ins">8. TestNG Maven plug-ins</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Maven 2 supports TestNG out of the box without the need to download any additional plugins (other than TestNG itself). It is recommended that you use version 2.4 or above of the Surefire plugin (this is the case in all recent versions of Maven).</p>
@@ -1061,7 +1402,7 @@ If your maven-surefire-plugin is defined in a Maven profile, you will need to se
 <p>You can find the full instructions on the <a href="https://maven.apache.org/plugins/maven-surefire-plugin/">Maven Surefire Plugin</a> website. There are also <a href="https://maven.apache.org/plugins/maven-surefire-plugin/examples/testng.html">TestNG-specific instructions</a>.</p>
 </div>
 <div class="sect2">
-<h3 id="_specifying_your_pom_xml">7.1. Specifying your pom.xml</h3>
+<h3 id="_specifying_your_pom_xml">8.1. Specifying your pom.xml</h3>
 <div class="paragraph">
 <p>The dependency in your project should look like the following:</p>
 </div>
@@ -1072,7 +1413,7 @@ If your maven-surefire-plugin is defined in a Maven profile, you will need to se
 <i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
-JDK8
+For JDK-8 users
 </td>
 </tr>
 </table>
@@ -1094,7 +1435,7 @@ JDK8
 <i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
-JDK11
+For JDK-11 users
 </td>
 </tr>
 </table>
@@ -1111,17 +1452,848 @@ JDK11
 </div>
 </div>
 <div class="sect2">
-<h3 id="_sample_reports">7.2. Sample reports</h3>
+<h3 id="_sample_reports">8.2. Sample reports</h3>
 <div class="paragraph">
 <p><a href="samplereports/index.html" class="bare">samplereports/index.html</a></p>
 </div>
 </div>
 </div>
 </div>
+<div class="sect1">
+<h2 id="_testng_ant_task">9. TestNG Ant Task</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You define the TestNG ant task as follows:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code data-lang="xml">&lt;taskdef resource="testngtasks" classpath="testng.jar"/&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This task runs TestNG tests and is always run in a forked JVM.  It accepts the following attributes:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Attribute</th>
+<th class="tableblock halign-left valign-top">Description</th>
+<th class="tableblock halign-left valign-top">Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>classfilesetref</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A reference to a <a href="https://ant.apache.org/manual/Types/resources.html#collection">ResourceCollection</a> containing the test classes to be run. Only File based <a href="https://ant.apache.org/manual/Types/resources.html#collection">ResourceCollections</a> are supported (ie. <a href="https://ant.apache.org/manual/Types/fileset.html">FileSet</a>).</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>classpath</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A PATH-like structure for the tests to be run.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>classpathref</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A reference to a PATH-like structure for the tests to be run.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>configFailurePolicy</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Whether TestNG should continue to execute the remaining tests in the suite or skip them if an <code>@Before*</code> method fails.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No. Defaults to <code>skip</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>dataProviderThreadCount</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The number of threads to use for data providers for this run. Ignored unless the parallel mode is also specified.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>delegateCommandSystemProperties</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Pass the command line properties as system properties.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No. Defaults to <code>false</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>dumpCommand</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Print the TestNG launcher command.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No. Defaults to <code>false</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>failureProperty</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The name of a property to set in the event of a failure. It is used only if the <code>haltonfailure</code> is not set.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>haltonfailure</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Stop the build process if a failure has occurred during the test run.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No. Defaults to <code>false</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>haltonskipped</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Stop the build process if there is at least on skipped test.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No. Defaults to <code>false</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>groups</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The list of groups to run, separated by spaces or commas.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>excludedgroups</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The list of groups to exclude, separated by spaces or commas</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>jvm</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The JVM to use, which will be run by <code>Runtime.exec()</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">java</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>listeners</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A comma or space-separated list of fully qualified classes that are TestNG listeners (for e.g., <a href="https://javadoc.io/doc/org.testng/testng/latest/org/testng/ITestListener.html">org.testng.ITestListener</a> or <a href="https://javadoc.io/doc/org.testng/testng/latest/org/testng/IReporter.html">org.testng.IReporter</a> )</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>methods</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A comma separated list of fully qualified class name and method. For e.g., <code>com.example.Foo.f1,com.example.Bar.f2</code>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>mode</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Either "testng", "junit" or "mixed". Whether TestNG should run only TestNG tests, JUnit tests or both.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No. Defaults to <code>testng</code>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>outputdir</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Directory for reports output.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No. Defaults to <code>test-output</code>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>skippedProperty</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The name of a property to set in the event of a skipped test. It is used only if the haltonskipped is not set.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>suiteRunnerClass</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A fully qualified name of a TestNG starter.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No.  Defaults to <code>org.testng.TestNG</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>suiteThreadPoolSize</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The size of a thread pool to run suites.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No.  Defaults to 1.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>parallel</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The parallel mode to use for running the tests - either methods or tests</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No - if not present, parallel mode will not be selected</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>suitename</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sets the default name of the test suite, if one is not specified in a suite xml file or in the source code</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No. Defaults to "Ant suite"</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>testJar</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Path to a jar containing tests and a suite definition.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>testname</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sets the default name of the test, if one is not specified in a suite xml file or in the source code</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No. defaults to "Ant test"</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>testnames</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A comma separated list of test names, as defined in the &lt;test&gt; tag. Only these tests will be run.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No. defaults to "Ant test"</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>threadCount</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The number of threads to use for this run. Ignored unless the parallel mode is also specified.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>timeOut</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The maximum time out in milliseconds that all the tests should run under.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>useDefaultListeners</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Whether the default listeners and reporters should be used.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Defaults to true.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>workingDir</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The directory where the ant task should change to before running TestNG.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>xmlfilesetref</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A reference to a <a href="https://ant.apache.org/manual/Types/resources.html#collection">ResourceCollection</a> containing the suite definitions to be run. Only File based <a href="https://ant.apache.org/manual/Types/resources.html#collection">ResourceCollections</a> are supported (i.e., <a href="https://ant.apache.org/manual/Types/fileset.html">FileSet</a>).</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>xmlPathInJar</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The path of the XML file inside the jar file, only applicable if testJar was specified</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">testng.xml</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+One of attributes <code>classpath</code>, <code>classpathref</code> or nested <code>&lt;classpath&gt;</code> must be used for providing the tests classpath.
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+One of the attributes <code>xmlfilesetref</code>, <code>classfilesetref</code> or nested <code>&lt;xmlfileset&gt;</code>, respectively <code>&lt;classfileset&gt;</code> must be used for providing the tests.
+</td>
+</tr>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_testng_modes">9.1. TestNG modes</h3>
+<div class="paragraph">
+<p>The TestNG mode gets applied when tests are passed to TestNG using classfilesetref, methods or nested &lt;classfileset&gt; and tells TestNG what kind of tests it should look for and run:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>testng</code>: find and run TestNG tests.</p>
+</li>
+<li>
+<p><code>junit</code>: find and run JUnit tests.</p>
+</li>
+<li>
+<p><code>mixed</code>: run both TestNG and JUnit tests.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<code>junit</code> and <code>mixed</code> modes require the JUnit jar file on the classpath.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_nested_elements">9.2. Nested Elements</h3>
+<div class="sect3">
+<h4 id="_classpath">9.2.1. classpath</h4>
+<div class="paragraph">
+<p>The <code>&lt;testng&gt;</code> task supports a nested &lt;classpath&gt; element that represents a PATH-like structure.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_bootclasspath">9.2.2. bootclasspath</h4>
+<div class="paragraph">
+<p>The location of bootstrap class files can be specified using this PATH-like structure - will be ignored if fork is not set.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_xmlfileset">9.2.3. xmlfileset</h4>
+<div class="paragraph">
+<p>The suite definitions (<code>testng.xml</code>) can be passed to the task with a FileSet structure.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_classfileset">9.2.4. classfileset</h4>
+<div class="paragraph">
+<p>TestNG can also run directly on classes, also supplied with a FileSet structure.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_jvmarg">9.2.5. jvmarg</h4>
+<div class="paragraph">
+<p>Additional parameters may be passed to the new VM via nested &lt;jvmarg&gt; elements. For example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code data-lang="xml">&lt;testng&gt;
+    &lt;jvmarg value="-Djava.compiler=NONE" /&gt;
+    &lt;!-- ... --&gt;
+&lt;/testng&gt;</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_sysproperty">9.2.6. sysproperty</h4>
+<div class="paragraph">
+<p>Use nested <code>&lt;sysproperty&gt;</code> elements to specify system properties required by the class. These properties will be made available to the virtual machine during the execution of the test. The attributes for this element are the same as for environment variables:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code data-lang="xml">&lt;testng&gt;
+    &lt;sysproperty key="basedir" value="${basedir}"/&gt;
+    &lt;!-- ... --&gt;
+&lt;/testng&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>will run the test and make the basedir property available to the test.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_propertyset">9.2.7. propertyset</h4>
+<div class="paragraph">
+<p>You may also use a nested &lt;propertyset&gt; element to specify a set of system properties that are defined outside of the TestNG ant task. This allows for more flexible definitions of system properties, for instance selecting all properties with a specific prefix or matching a regex. See the <a href="https://ant.apache.org/manual/Types/propertyset.html">PropertySet</a> page in the <a href="https://ant.apache.org/manual/">Ant manual</a> for full details. Here&#8217;s a simple example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code data-lang="xml">&lt;project name="Hello World Project"&gt;
+    &lt;property name="myprop1" value="value 1"/&gt;
+    &lt;property name="myprop2" value="value 2"/&gt;
+
+    &lt;propertyset id="propset1"&gt;
+        &lt;propertyref name="myprop1"/&gt;
+        &lt;propertyref name="myprop2"/&gt;
+    &lt;/propertyset&gt;
+
+    &lt;testng outputdir="${testng.report.dir}" classpathref="run.cp"&gt;
+        &lt;xmlfileset dir="${test15.dir}" includes="testng-single3.xml"/&gt;
+        &lt;propertyset refid="propset1"/&gt;
+    &lt;/testng&gt;
+&lt;/project&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>In this case, the system properties named "myprop1" and "myprop2" are passed along to the TestNG process.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_reporter">9.2.8. reporter</h4>
+<div class="paragraph">
+<p>An inner <code>&lt;reporter&gt;</code> element is an alternative way to inject a custom report listener allowing the user to set custom properties in order to fine-tune the behavior of the reporter at run-time.
+The element has one classname attribute which is mandatory, indicating the class of the custom listener. In order to set the properties of the reporter, the <code>&lt;reporter&gt;</code> element can contain several nested &lt;property&gt; elements which will provide the name and value attributes as seen below:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code data-lang="xml">&lt;testng&gt;
+    &lt;!--... --&gt;
+    &lt;reporter classname="com.test.MyReporter"&gt;
+    &lt;property name="methodFilter" value="*insert*"/&gt;
+    &lt;property name="enableFiltering" value="true"/&gt;
+&lt;/reporter&gt;
+&lt;!--... --&gt;
+&lt;/testng&gt;</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code data-lang="java">public class MyReporter {
+
+  public String getMethodFilter() { /* code */ }
+  public void setMethodFilter(String methodFilter) { /* code */ }
+  public boolean isEnableFiltering() { /* code */ }
+  public void setEnableFiltering(boolean enableFiltering) { /* code */ }
+  // code
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>You have to consider though that for the moment only a limited set of property types are supported:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>String</code></p>
+</li>
+<li>
+<p><code>int</code></p>
+</li>
+<li>
+<p><code>boolean</code></p>
+</li>
+<li>
+<p><code>byte</code></p>
+</li>
+<li>
+<p><code>char</code></p>
+</li>
+<li>
+<p><code>double</code></p>
+</li>
+<li>
+<p><code>float</code></p>
+</li>
+<li>
+<p><code>long</code></p>
+</li>
+<li>
+<p><code>short</code></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_env">9.2.9. env</h4>
+<div class="paragraph">
+<p>It is possible to specify environment variables to pass to the TestNG forked virtual machine via nested <code>&lt;env&gt;</code> elements. For a description of the <code>&lt;env&gt;</code> element&#8217;s attributes, see the description in the <a href="https://ant.apache.org/manual/CoreTasks/exec.html">exec</a> task.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_examples">9.3. Examples</h3>
+<div class="paragraph">
+<p><strong>Suite xml</strong></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code data-lang="xml">&lt;testng classpathref="run.cp"  outputDir="${testng.report.dir}"  sourcedir="${test.src.dir}"  haltOnfailure="true"&gt;
+   &lt;xmlfileset dir="${test14.dir}" includes="testng.xml"/&gt;
+&lt;/testng&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Class FileSet</strong></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code data-lang="xml">&lt;testng classpathref="run.cp" outputDir="${testng.report.dir}" haltOnFailure="true" verbose="2"&gt;
+    &lt;classfileset dir="${test.build.dir}" includes="**/*.class" /&gt;
+&lt;/testng&gt;</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_more_testng_reading">10. MORE TESTNG READING</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_articles_and_presentations">10.1. Articles and presentations</h3>
+<div class="paragraph">
+<p>Here are several articles and presentations about TestNG (English, French, German).</p>
+</div>
+<div class="sect3">
+<h4 id="_english">10.1.1. English</h4>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://www.slideshare.net/LevonApreyan/testng-framework-72078619">TestNG presentation (Levon Apreyan, February 2017)</a></p>
+</li>
+<li>
+<p><a href="https://community.oracle.com/docs/DOC-916315">Use TestNG to create test logs that are structured like Javadocs (Raghunandan Seshadri, August 2015)</a></p>
+</li>
+<li>
+<p><a href="https://blogs.atlassian.com/2013/02/testng-plus-junit-bamboo/">How I Learned to Stop Worrying and Love TestNG (March 2013)</a></p>
+</li>
+<li>
+<p><a href="https://zeroturnaround.com/labs/using-spock-to-test-groovy-and-java-applications/">Using Spock to test Groovy AND Java applications (March 2013)</a></p>
+</li>
+<li>
+<p><a href="https://www.asjava.com/testng/testng-tutorials/">TestNG tutorials (Jammy Chen)</a></p>
+</li>
+<li>
+<p><a href="https://kaczanowscy.pl/tomek/2012-04/why-testng-and-not-junit">Why TestNG and not JUnit? (Tomek Kaczanowski)</a></p>
+</li>
+<li>
+<p><a href="https://www.randomsync.net/2012/02/excel-testng-driving-testng-tests.html">TestNG and Excel</a></p>
+</li>
+<li>
+<p><a href="https://github.com/rackspace/python-proboscis">TestNG in Python</a></p>
+</li>
+<li>
+<p><a href="https://www.opengamma.com/blog/2011/04/04/converting-opengamma-junit-testng">Converting a large codebase from JUnit 4 to TestNG</a></p>
+</li>
+<li>
+<p><a href="https://seleniumexamples.com/blog/guide/using-soft-assertions-in-testng/">Using soft assertions with TestNG</a></p>
+</li>
+<li>
+<p><a href="https://kaczanowscy.pl/tomek/2011-02/visualization-dependent-test-methods">Visualizing live dependencies (Tomek Kaczanowski)</a></p>
+</li>
+<li>
+<p><a href="https://www.lysergicjava.com/?p=165">Passing parameters to @DataProviders.</a></p>
+</li>
+<li>
+<p><a href="https://barisergun.blogspot.com/2010/09/integrated-mockito-testng-and-emma-on.html">TestNG, Emma and Mockito</a></p>
+</li>
+<li>
+<p><a href="https://www.dotneter.org/2010/09/data-driven-testing-using-selenium-testng-part-1-of-4.html">Data-driven testing using Selenium and TestNG (video)</a></p>
+</li>
+<li>
+<p><a href="https://blog.meesqa.com/2010/09/11/combine-multiple-testng-resultsxml-files-into-a-single-xml-file/">Combining multiple testng-results.xml file into a single file</a></p>
+</li>
+<li>
+<p><a href="https://techo-ecco.com/blog/testng-with-cobertura/">TestNG + Cobertura</a></p>
+</li>
+<li>
+<p><a href="https://blog.jayway.com/2009/12/14/powermock-testng-true/">TestNG + PowerMock + Mockito</a></p>
+</li>
+<li>
+<p><a href="https://maxheapsize.com/2009/09/23/test-jboss-rules-5-with-testng/">TestNG and Drools</a></p>
+</li>
+<li>
+<p><a href="https://functionaltestautomation.blogspot.com/2009/10/dataprovider-data-driven-testing-with.html">Data Driven Testing with Selenium and TestNG</a></p>
+</li>
+<li>
+<p><a href="https://margelatu.org/2009/06/25/java-code-coverage-reports-in-eclipse/">Code coverage with Emma and TestNG</a></p>
+</li>
+<li>
+<p><a href="https://www.mkyong.com/unittest/junit-4-vs-testng-comparison/">Comparison between JUnit 4 and TestNG</a></p>
+</li>
+<li>
+<p><a href="https://www.michaelminella.com/testing/unit-testing-with-testng-and-jmockit.html">Unit testing with TestNG and JMockit (part 1)</a></p>
+</li>
+<li>
+<p><a href="https://www.michaelminella.com/testing/unit-testing-with-testng-and-jmockit-part-2.html">Unit testing with TestNG and JMockit (part 2)</a></p>
+</li>
+<li>
+<p><a href="https://www.techbookreport.com/tbr0332.html">Review of the book</a></p>
+</li>
+<li>
+<p><a href="https://thediscoblog.com/2006/10/05/testng-is-so-groovy/">TestNG and Groovy (Andrew Glover, October 2006)</a></p>
+</li>
+<li>
+<p><a href="https://www-128.ibm.com/developerworks/java/library/j-cq08296/">In pursuit of code quality (Andrew Glover, August 2006)</a></p>
+</li>
+<li>
+<p><a href="https://membres.lycos.fr/testng/">TestNG Tutorial (Claude Quezel, March 2006)</a></p>
+</li>
+<li>
+<p><a href="https://stripes.mc4j.org/confluence/display/stripes/Unit+Testing">TestNG and Stripes (Tim Fennel, April 2006)</a></p>
+</li>
+<li>
+<p><a href="https://testearly.com/2006/04/03/rerunning-of-failed-tests/">Rerunning failed tests (Andrew Glover, April 2006)</a></p>
+</li>
+<li>
+<p><a href="https://howardlewisship.com/tapestry-javaforge/tapestry-testng/">Tapestry and TestNG (Howard Lewis-Ship, April 2006)</a></p>
+</li>
+<li>
+<p><a href="https://thediscoblog.com/2006/03/27/using-junit-extensions-in-testng/">Using JUnit extensions in TestNG (Andrew Glover, March 2006)</a></p>
+</li>
+<li>
+<p><a href="https://www-128.ibm.com/developerworks/forums/dw_thread.jsp?forum=812&amp;thread=110765&amp;cat=10">Code coverage of TestNG tests with Cobertura (Andrew Glover, March 2006)</a></p>
+</li>
+<li>
+<p><a href="https://beust.com/weblog/archives/000369.html">Statistical Testing (Cédric Beust, February 2006)</a></p>
+</li>
+<li>
+<p><a href="https://bill.dudney.net/roller/page/bill?entry=testng_is_a_leap_beyond">TestNG and JUnit (Bill Dudney, February 2006)</a></p>
+</li>
+<li>
+<p><a href="https://beust.com/weblog/archives/000362.html">Distributed TestNG (Cédric Beust, January 2006)</a></p>
+</li>
+<li>
+<p><a href="https://erik.thauvin.net/blog/news.jsp?date=2006-01-29#418">Testing private methods (Erik Thauvin, January 2006)</a></p>
+</li>
+<li>
+<p><a href="https://blog.hibernate.org/cgi-bin/blosxom.cgi/2005/11/24#ejb3withtestng">Testing EJB3 with TestNG (Christian Bauer, November 2005)</a></p>
+</li>
+<li>
+<p><a href="https://www.vanwardtechnologies.com/cedricb01.php">Vanward Technologies interview (October 2005)</a></p>
+</li>
+<li>
+<p><a href="https://jroller.com/page/tfenne?entry=i_m_starting_to_really">TestNG reaction (Tim Fennell, October 2005)</a></p>
+</li>
+<li>
+<p><a href="https://www.realsolve.co.uk/site/tech/blog.php?name=philzoio&amp;mydate=20050826">Using JUnit libraries with TestNG (Phil Zoio, August 2005)</a></p>
+</li>
+<li>
+<p><a href="https://jyperion.org/articles/testng/testng.htm">Introducing TestNG (Thierry Janaudy, August 2005)</a></p>
+</li>
+<li>
+<p><a href="https://www.theserverside.com/news/thread.tss?thread_id=35737">Migrating to TestNG (TheServerSide, August 2005)</a></p>
+</li>
+<li>
+<p><a href="https://forum.springframework.org/viewtopic.php?t=7903">TestNG and Spring (August 2005)</a></p>
+</li>
+<li>
+<p><a href="https://groups-beta.google.com/group/comp.lang.ruby/browse_thread/thread/3a0952199bb1bc1d/8a4a6d7931c039ce?lnk=st&amp;q=testng+ruby&amp;rnum=1&amp;hl=en">TestNG and Ruby (August 2005)</a></p>
+</li>
+<li>
+<p><a href="https://www.thechanfam.net/wordpress/?p=36">TestNG and Maven (April 2005)</a></p>
+</li>
+<li>
+<p><a href="https://kevin.oneill.id.au/2005/04/06/testng">TestNG review (April 2005)</a></p>
+</li>
+<li>
+<p><a href="https://www.javaworld.com/javaworld/jw-04-2005/jw-0404-testng_p.html">JavaWorld (April 2005)</a></p>
+</li>
+<li>
+<p><a href="https://pcal.net/blog/archives/2005/03/a_great_new_ide.html">Solving the JUnit dependency problem (March 2005)</a></p>
+</li>
+<li>
+<p><a href="https://beust.com/weblog/archives/000259.html">Are dependent test methods really evil?  (March 2005)</a></p>
+</li>
+<li>
+<p><a href="https://beust.com/weblog/archives/000252.html">The "call super" anti-pattern (March 2005)</a></p>
+</li>
+<li>
+<p><a href="https://beust.com/weblog/archives/000236.html">Testing asynchronous code with TestNG (February 2005)</a></p>
+</li>
+<li>
+<p><a href="https://www-106.ibm.com/developerworks/java/library/j-testng/">Making Testing a Breeze with TestNG (DeveloperWorks, January 2005) (also in Chinese)</a></p>
+</li>
+<li>
+<p><a href="https://www.theserverside.com/news/thread.tss?thread_id=31214">TestNG:  Catch the Testing Fever (TheServerSide, January 2005)</a></p>
+</li>
+<li>
+<p><a href="https://www.beust.com/weblog/archives/000230.html">Why use XML to configure tests?  (January 2005)</a></p>
+</li>
+<li>
+<p><a href="https://www.javapolis.com/confluence/display/JP04/Beyond+JUnit+,+introducing+TestNG,+the+next+generation+in+testing">TestNG:  Beyond JUnit (Presentation at JavaPolis, Belgium, December 2004)</a></p>
+</li>
+<li>
+<p><a href="https://www.theserverside.com/news/thread.tss?thread_id=30394">Announcing TestNG 2.0 (TheServerSide, December 2004)</a></p>
+</li>
+<li>
+<p><a href="https://www.javalobby.org/articles/testng/">TestNG:  Catching the TestNG fever (JavaLobby, December 2004)</a></p>
+</li>
+<li>
+<p><a href="https://www.beust.com/weblog/archives/000170.html">Using inheritance of annotations for flexible testing (August 2004)</a></p>
+</li>
+<li>
+<p><a href="https://www.beust.com/weblog/archives/000175.html">Multiple instantations of tests (August 2004)</a></p>
+</li>
+<li>
+<p><a href="https://theserverside.com/blogs/showblog.tss?id=Unitized">Don&#8217;t get unitized (July 2004)</a></p>
+</li>
+<li>
+<p><a href="https://www.google.com/url?sa=X&amp;start=3&amp;q=https://www.theserverside.com/news/thread.tss?thread_id=25568">TestNG:  Testing, the Next Generation (TheServerSide, April 2004)</a></p>
+</li>
+<li>
+<p><a href="https://rationaleemotions.com/tags/TestNG">TestNG features explained via use-cases</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_french">10.1.2. French</h4>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://www.spalud.info/testng/">Le framework TestNG</a> (Sébastien Palud, April 2006)</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_german">10.1.3. German</h4>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://www.qaware.de/downloads/to1-adersberger.pdf">Comparison TestNG / JUnit 4</a> (Josef Adersberger, May 2006, PDF)</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_contributors">10.2. CONTRIBUTORS</h3>
+<div class="paragraph">
+<p>TestNG has received a lot of help from various people throughout its existence.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>With code:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="mailto:the_mindstorm@evolva.ro">Alexandru Popescu</a>, who ported TestNG to JDK 1.4 and has been tirelessly contributing ever since.</p>
+</li>
+<li>
+<p><a href="mailto:julien@herr.fr">Julien Herr</a>, for all the contributions and for all the active code reviews.</p>
+</li>
+<li>
+<p>Hani Suleiman and Mark Derricutt (IDEA plug-in).</p>
+</li>
+<li>
+<p>Andrew Glover and <a href="https://tacos.sourceforge.net/">Jesse Kuhnert</a>/https://blogs.codehaus.org/people/brett//archives/maven.html[Brett Porter] (Maven 1 and Maven 2 plug-ins respectively).</p>
+</li>
+<li>
+<p>Jolly Chen (JUnitReport plug-in).</p>
+</li>
+<li>
+<p>Thierry Janaudy (PDF report plug-in).</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>And also with ideas, articles and bug reports:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Filippo Diotalevi, Matthew Schmidt Robert McIntosh, JR Boyens, Robert Watkins, Aleksi Kallio, Doug Lea, Eron Wright, Guillaume Laforge, Owen Griffiths, Jean-Louis Berliet, Morten Christensen and many others&#8230;&#8203;</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_special_thanks">10.3. SPECIAL THANKS</h3>
+<div class="paragraph">
+<p>To <a href="https://yourkit.com/">YourKit</a> for helping us profiling TestNG.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_testimonies">10.4. TESTIMONIES</h3>
+<div class="paragraph">
+<p>A great product is nothing without testimonies, so here is what people have to say about TestNG:</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>"It&#8217;s a lot of fun.  Not as fun as Seinfeld, but more fun than Chris Rock on a bad day"</p>
+</div>
+</blockquote>
+<div class="attribution">
+&#8212; A buddy
+</div>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>"Are you going to eat your dessert?"</p>
+</div>
+</blockquote>
+<div class="attribution">
+&#8212; Someone I met at the cafeteria
+</div>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>"Rock on, dude"</p>
+</div>
+</blockquote>
+<div class="attribution">
+&#8212; A skateboarder
+</div>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>"Okay, I&#8217;ll try it.  Can I have my laptop back now"?</p>
+</div>
+</blockquote>
+<div class="attribution">
+&#8212; A scared contractor
+</div>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>"Cedric, stop talking to him, he&#8217;s sleeping"</p>
+</div>
+</blockquote>
+<div class="attribution">
+&#8212; Some random person who should mind their own business
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_the_testng_textbook_next_generation_java_testing">11. The TestNG TextBook: Next Generation Java Testing</h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="pics/book-cover.jpg" alt="book cover">
+</div>
+</div>
+<div class="paragraph">
+<p>Our book is now available from <a href="https://www.amazon.com/Next-Generation-Java-Testing-Advanced/dp/0321503104/ref=pd_bbs_sr_1/104-7105897-1187923?ie=UTF8&amp;s=books&amp;qid=1193417110&amp;sr=8-1">Amazon</a> and various other retail stores (check out the <a href="book-toc.html">table of contents</a>).</p>
+</div>
+<div class="sect2">
+<h3 id="_book_description">11.1. Book Description</h3>
+<div class="paragraph">
+<p>Enterprise Java developers must achieve broader, deeper test coverage, going beyond unit testing to implement functional and integration testing with systematic acceptance. <strong>Next Generation Java Testing</strong> introduces breakthrough Java testing techniques and TestNG, a powerful open source Java testing platform.</p>
+</div>
+<div class="paragraph">
+<p><strong>Cédric Beust</strong>, TestNG&#8217;s creator, and leading Java developer <strong>Hani Suleiman</strong>, present powerful, flexible testing patterns that will work with virtually any testing tool, framework, or language. They show how to leverage key Java platform improvements designed to facilitate effective testing, such as dependency injection and mock objects. They also thoroughly introduce TestNG, demonstrating how it overcomes the limitations of older frameworks and enables new techniques, making it far easier to test today&#8217;s complex software systems.</p>
+</div>
+<div class="paragraph">
+<p>Pragmatic and results-focused, <strong>Next Generation Java Testing</strong> will help Java developers build more robust! code for today&#8217;s mission-critical environments.</p>
+</div>
+<div class="paragraph">
+<p>This book</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Illuminates the tradeoffs associated with testing, so you can make better decisions about what and how to test</p>
+</li>
+<li>
+<p>Introduces TestNG, explains its goals and features, and shows how to apply them in real-world environments</p>
+</li>
+<li>
+<p>Shows how to integrate TestNG with your existing code, development frameworks, and software libraries</p>
+</li>
+<li>
+<p>Demonstrates how to test crucial code features, such as encapsulation, state sharing, scopes, and thread safety</p>
+</li>
+<li>
+<p>Shows how to test application elements, including JavaEE APIs, databases, Web pages, and XML files</p>
+</li>
+<li>
+<p>Presents advanced techniques: testing partial failures, factories, dependent testing, remote invocation, cluster-based test farms, and more</p>
+</li>
+<li>
+<p>Walks through installing and using TestNG plug-ins for Eclipse, and IDEA</p>
+</li>
+<li>
+<p>Contains extensive code examples</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Whether you use TestNG, JUnit, or another testing framework, the ! testing design patterns presented in this book will show you how to im prove your tests by giving you concrete advice on how to make your code and your design more testable.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_about_the_author">11.2. About the Author</h3>
+<div class="paragraph">
+<p><strong>Cédric Beust</strong>, a senior software engineer at Google, is an active member of the Java Community Process who has been extensively involved in the development of the latest Java release. He is the creator and main contributor to the TestNG project.</p>
+</div>
+<div class="paragraph">
+<p><strong>Hani Suleiman</strong> is CTO of Formicary, a consulting and portal company specializing in financial applications. He is one of two individual members who has been elected to the Executive Committee of the Java Community Process.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_kobalt_a_modern_versatile_build_system">12. Kobalt A modern, versatile build system</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Kobalt is a build system inspired by Gradle and Maven. It reuses the best concepts from these two successful and popular build systems while adding a few modern features of its own. Kobalt is written entirely in Kotlin and its build files are valid Kotlin files as well. Thanks to IDEA&#8217;s top-notch support for Kotlin, writing Kobalt build files automatically benefits from auto-completion and all the other features that you are used to when writing code with your IDE of choice.</p>
+</div>
+<div class="paragraph">
+<p>Read more about Kobalt <a href="https://beust.com/kobalt/home/index.html">here</a></p>
+</div>
+</div>
+</div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2024-01-04 08:05:22 UTC
+Last updated 2024-01-05 18:00:54 UTC
 </div>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/run_prettify.min.js"></script>
