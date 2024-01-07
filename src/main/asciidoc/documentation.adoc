@@ -3,3 +3,7 @@
 include::chapters/introduction.adoc[]
 
 include::chapters/annotations.adoc[]
+
+include::chapters/testng_xml.adoc[]
+
+include::chapters/running_testng.adoc[]
