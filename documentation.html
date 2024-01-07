@@ -6,7 +6,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.18">
 <title>TestNG Documentation</title>
-<link rel="stylesheet" href="./dark.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
+<link rel="stylesheet" href="./asciidoctor.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.css">
 </head>
@@ -95,15 +96,18 @@
 <h3 id="_annotations">Annotations</h3>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
 </colgroup>
 <tbody>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Annotations</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Description</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Annotation</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
 <ul>
 <li>
@@ -186,6 +190,7 @@
 </div></div></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top" rowspan="7"><p class="tableblock">Annotation Attributes</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>alwaysRun</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">For before methods (beforeSuite, beforeTest, beforeTestClass and beforeTestMethod, but not beforeGroups): If set to true, this configuration method will be run regardless of what groups it belongs to.
 For after methods (afterSuite, afterClass, &#8230;&#8203;): If set to true, this configuration method will be run even if one or more methods invoked previously failed or was skipped.</p></td>
@@ -215,10 +220,12 @@ For after methods (afterSuite, afterClass, &#8230;&#8203;): If set to true, this
 <td class="tableblock halign-left valign-top"><p class="tableblock">Only for @BeforeMethod and @AfterMethod. If specified, then this setup/teardown method will only be invoked if the corresponding test method belongs to one of the listed groups.</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Annotation</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>@DataProvider</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Marks a method as supplying data for a test method. The annotated method must return an <code>Object[][]</code> where each <code>Object[]</code> can be assigned the parameter list of the test method. The @Test method that wants to receive data from this <code>DataProvider</code> needs to use a dataProvider name equals to the name of this annotation.</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top" rowspan="2"><p class="tableblock">Annotation Attributes</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>name</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">The name of this data provider. If it&#8217;s not supplied, the name of this data provider will automatically be set to the name of the method.</p></td>
 </tr>
@@ -227,30 +234,37 @@ For after methods (afterSuite, afterClass, &#8230;&#8203;): If set to true, this
 <td class="tableblock halign-left valign-top"><p class="tableblock">If set to true, tests generated using this data provider are run in parallel. Default value is false.</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Annotation</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>@Factory</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Marks a method as a factory that returns objects that will be used by TestNG as Test classes. The method must return <code>Object[]</code>.</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Annotation</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>@Listeners</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Defines listeners on a test class.</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Annotation Attributes</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>value</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">An array of classes that extend org.testng.ITestNGListener.</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Annotation</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>@Parameters</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Describes how to pass parameters to a @Test method.</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Annotation Attributes</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>value</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">The list of variables used to fill the parameters of this method.</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Annotation</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>@Test</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Marks a class or a method as part of the test.</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top" rowspan="16"><p class="tableblock">Annotation Attributes</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>alwaysRun</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">If set to true, this test method will always be run even if it depends on a method that failed.</p></td>
 </tr>
@@ -323,7 +337,7 @@ NOTE: this attribute is ignored if invocationCount is not specified</p></td>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2024-01-05 18:40:26 UTC
+Last updated 2024-01-07 12:52:23 UTC
 </div>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/run_prettify.min.js"></script>
