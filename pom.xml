@@ -80,6 +80,12 @@
                                         <include>**/*.js</include>
                                     </includes>
                                 </resource>
+                                <resource>
+                                    <directory>src/main/resources</directory>
+                                    <includes>
+                                        <include>sample-testng-results.xml</include>
+                                    </includes>
+                                </resource>
                             </resources>
                             <outputDirectory>${project.build.directory}/html</outputDirectory>
                         </configuration>

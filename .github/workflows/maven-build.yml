@@ -18,7 +18,7 @@ jobs:
           distribution: 'corretto'
           cache: maven
       - name: Generate html
-        run: mvn clean generate-resources
+        run: mvn clean test-compile
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:

@@ -1,7 +1,7 @@
 = TestNG Documentation
 :sectnums:
 :toc:                                                               
-:toclevels: 4                                                       
+:toclevels: 5
 :toc-title: Table Of Contents
 :experimental:                                                      
 :description: TestNG user documentation
@@ -9,6 +9,9 @@
 :imagesdir: ./img                                                   
 :docinfodir: ./docinfos
 :docinfo:shared
+:currentVersion: 7.9.0
+:javadocs-base-url: https://javadoc.io/static/org.testng/testng/{currentVersion}
+
 
 include::welcome.adoc[]
 

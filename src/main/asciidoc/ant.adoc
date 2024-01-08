@@ -66,7 +66,7 @@ This task runs TestNG tests and is always run in a forked JVM.  It accepts the f
 |java
 
 |`listeners`
-|A comma or space-separated list of fully qualified classes that are TestNG listeners (for e.g., https://javadoc.io/doc/org.testng/testng/latest/org/testng/ITestListener.html[org.testng.ITestListener] or https://javadoc.io/doc/org.testng/testng/latest/org/testng/IReporter.html[org.testng.IReporter] )
+|A comma or space-separated list of fully qualified classes that are TestNG listeners (for e.g., {javadocs-base-url}/org/testng/ITestListener.html[org.testng.ITestListener] or {javadocs-base-url}/org/testng/IReporter.html[org.testng.IReporter] )
 |No.
 
 |`methods`
