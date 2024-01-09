@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.18">
-<title>Class level annotations</title>
+<title>Overriding test methods</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <link rel="stylesheet" href="./asciidoctor.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -16,49 +16,34 @@
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel2">
-<li><a href="#_class_level_annotations">Class level annotations</a></li>
+<li><a href="#_overriding_test_methods">Overriding test methods</a></li>
 </ul>
 </div>
 </div>
 <div id="content">
 <div class="sect2">
-<h3 id="_class_level_annotations">Class level annotations</h3>
+<h3 id="_overriding_test_methods">Overriding test methods</h3>
 <div class="paragraph">
-<p>The <code>@Test</code> annotation can be put on a class instead of a test method:</p>
+<p>TestNG allows you to override and possibly skip the invocation of test methods. One example of where this is useful is if you need to your test methods with a specific security manager. You achieve this by providing a listener that implements {javadocs-base-url}/org/testng/IHookable.html[IHookable].</p>
+</div>
+<div class="paragraph">
+<p>Here is an example with JAAS:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="prettyprint highlight"><code data-lang="java">@Test
-public class Test1 {
-  public void test1() {
-  }
+<pre class="prettyprint highlight"><code data-lang="java">public class MyHook implements IHookable {
+  public void run(final IHookCallBack icb, ITestResult testResult) {
+    // Preferably initialized in a @Configuration method
+    mySubject = authenticateWithJAAs();
 
-  public void test2() {
+    Subject.doAs(mySubject, new PrivilegedExceptionAction() {
+      public Object run() {
+        icb.callback(testResult);
+      }
+    };
   }
 }</code></pre>
 </div>
-</div>
-<div class="paragraph">
-<p>The effect of a class level @Test annotation is to make all the public methods of this class to become test methods even if they are not annotated. You can still repeat the <code>@Test</code> annotation on a method if you want to add certain attributes.</p>
-</div>
-<div class="paragraph">
-<p><strong>For example:</strong></p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="prettyprint highlight"><code data-lang="java">@Test
-public class Test1 {
-  public void test1() {
-  }
-
-  @Test(groups = "g1")
-  public void test2() {
-  }
-}</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>will make both <code>test1()</code> and <code>test2()</code> test methods but on top of that, <code>test2()</code> now belongs to the group "g1".</p>
 </div>
 </div>
 </div>
