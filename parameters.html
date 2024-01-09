@@ -15,14 +15,14 @@
 <div id="header">
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
-<ul class="sectlevel3">
+<ul class="sectlevel2">
 <li><a href="#_parameters">Parameters</a></li>
 </ul>
 </div>
 </div>
 <div id="content">
-<div class="sect3">
-<h4 id="_parameters">Parameters</h4>
+<div class="sect2">
+<h3 id="_parameters">Parameters</h3>
 <div class="literalblock">
 <div class="content">
 <pre>TestNG allows you to pass an arbitrary number of parameters to each of your tests using the `@Parameters` annotation.</pre>
@@ -44,8 +44,8 @@
 </li>
 </ul>
 </div>
-<div class="sect4">
-<h5 id="_parameters_from_testng_xml">Parameters from testng.xml</h5>
+<div class="sect3">
+<h4 id="_parameters_from_testng_xml">Parameters from testng.xml</h4>
 <div class="paragraph">
 <p>If you are using simple values for your parameters, you can specify them in your <code>testng.xml</code>:</p>
 </div>
@@ -161,8 +161,8 @@ public void testNonExistentParameter(@Optional("mysql") String db) {
 </ul>
 </div>
 </div>
-<div class="sect4">
-<h5 id="_parameters_with_dataproviders">Parameters with DataProviders</h5>
+<div class="sect3">
+<h4 id="_parameters_with_dataproviders">Parameters with DataProviders</h4>
 <div class="paragraph">
 <p>Specifying parameters in testng.xml might not be sufficient if you need to pass complex parameters, or parameters that need to be created from Java (complex objects, objects read from a property file or a database, etc&#8230;&#8203;). In this case, you can use a Data Provider to supply the values you need to test.  A Data Provider is a method on your class that returns an array of array of objects.  This method is annotated with <code>@DataProvider</code>:</p>
 </div>
@@ -343,8 +343,9 @@ public Object[][] getTestData() {
 <div class="paragraph">
 <p>If you want to run a few specific data providers in a different thread pool, you need to run them from a different XML file.</p>
 </div>
-<div class="sect5">
-<h6 id="_controlling_threadpool_usage">Controlling ThreadPool Usage</h6>
+</div>
+<div class="sect3">
+<h4 id="_controlling_threadpool_usage">Controlling ThreadPool Usage</h4>
 <div class="paragraph">
 <p>Starting from TestNG <code>7.9.0</code>, there are some additional ways in which the thread-pools that run the parallel tests can be controlled. For these new features to be consumed, update your suite file to use the <code>testng-1.1.dtd</code> (as seen below) so that your IDE can provide you with autocompletion:</p>
 </div>
@@ -367,9 +368,8 @@ public Object[][] getTestData() {
 </ul>
 </div>
 </div>
-</div>
-<div class="sect4">
-<h5 id="_parameters_from_system_properties">Parameters from System Properties</h5>
+<div class="sect3">
+<h4 id="_parameters_from_system_properties">Parameters from System Properties</h4>
 <div class="paragraph">
 <p>TestNG can be passed parameters on the command line of the Java Virtual Machine using system properties (<code>-D</code>). Parameters passed in this way are not required to be pre-defined in <code>testng.xml</code>, but will override any parameters defined there.</p>
 </div>
@@ -393,7 +393,6 @@ In TestNG 6.x parameters defined in testng.xml could not be overwritten by syste
 </tr>
 </table>
 </div>
-</div>
 <div class="sect4">
 <h5 id="_parameters_in_reports">Parameters in reports</h5>
 <div class="paragraph">
@@ -407,9 +406,10 @@ In TestNG 6.x parameters defined in testng.xml could not be overwritten by syste
 </div>
 </div>
 </div>
+</div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2024-01-08 17:05:30 UTC
+Last updated 2024-01-09 06:34:12 UTC
 </div>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/run_prettify.min.js"></script>

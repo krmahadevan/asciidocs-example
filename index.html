@@ -73,36 +73,40 @@
 <li><a href="#_groups_of_groups">3.5.3. Groups of groups</a></li>
 <li><a href="#_exclusion_groups">3.5.4. Exclusion groups</a></li>
 <li><a href="#_partial_groups">3.5.5. Partial groups</a></li>
-<li><a href="#_parameters">3.5.6. Parameters</a>
-<ul class="sectlevel4">
-<li><a href="#_parameters_from_testng_xml">Parameters from testng.xml</a></li>
-<li><a href="#_parameters_with_dataproviders">Parameters with DataProviders</a>
-<ul class="sectlevel5">
-<li><a href="#_controlling_threadpool_usage">Controlling ThreadPool Usage</a></li>
 </ul>
 </li>
-<li><a href="#_parameters_from_system_properties">Parameters from System Properties</a></li>
+<li><a href="#_parameters">3.6. Parameters</a>
+<ul class="sectlevel3">
+<li><a href="#_parameters_from_testng_xml">3.6.1. Parameters from testng.xml</a></li>
+<li><a href="#_parameters_with_dataproviders">3.6.2. Parameters with DataProviders</a></li>
+<li><a href="#_controlling_threadpool_usage">3.6.3. Controlling ThreadPool Usage</a></li>
+<li><a href="#_parameters_from_system_properties">3.6.4. Parameters from System Properties</a>
+<ul class="sectlevel4">
 <li><a href="#_parameters_in_reports">Parameters in reports</a></li>
 </ul>
 </li>
-<li><a href="#_dependencies">3.5.7. Dependencies</a>
-<ul class="sectlevel4">
-<li><a href="#_dependencies_with_annotations">Dependencies with annotations</a></li>
-<li><a href="#_dependencies_in_xml">Dependencies in XML</a></li>
 </ul>
 </li>
-<li><a href="#_class_level_annotations">3.5.8. Class level annotations</a></li>
-<li><a href="#_ignoring_tests">3.5.9. Ignoring tests</a></li>
-<li><a href="#_parallelism_and_time_outs">3.5.10. Parallelism and time-outs</a>
-<ul class="sectlevel4">
-<li><a href="#_parallel_suites">Parallel suites</a></li>
-<li><a href="#_parallel_tests_classes_and_methods">Parallel tests, classes and methods</a></li>
+<li><a href="#_dependencies">3.7. Dependencies</a>
+<ul class="sectlevel3">
+<li><a href="#_dependencies_with_annotations">3.7.1. Dependencies with annotations</a></li>
+<li><a href="#_dependencies_in_xml">3.7.2. Dependencies in XML</a></li>
 </ul>
 </li>
-<li><a href="#_rerunning_failed_tests">3.5.11. Rerunning failed tests</a></li>
-<li><a href="#_junit_tests">3.5.12. JUnit tests</a></li>
-<li><a href="#_running_testng_programmatically">3.5.13. Running TestNG programmatically</a></li>
-<li><a href="#_beanshell_and_advanced_group_selection">3.5.14. BeanShell and advanced group selection</a></li>
+<li><a href="#_class_level_annotations">3.8. Class level annotations</a></li>
+<li><a href="#_ignoring_tests">3.9. Ignoring tests</a></li>
+<li><a href="#_parallelism_and_time_outs">3.10. Parallelism and time-outs</a>
+<ul class="sectlevel3">
+<li><a href="#_parallel_suites">3.10.1. Parallel suites</a></li>
+<li><a href="#_parallel_tests_classes_and_methods">3.10.2. Parallel tests, classes and methods</a></li>
+</ul>
+</li>
+<li><a href="#_rerunning_failed_tests">3.11. Rerunning failed tests</a></li>
+<li><a href="#_junit_tests">3.12. JUnit tests</a></li>
+<li><a href="#_running_testng_programmatically">3.13. Running TestNG programmatically</a></li>
+<li><a href="#_beanshell_and_advanced_group_selection">3.14. BeanShell and advanced group selection</a>
+<ul class="sectlevel3">
+<li><a href="#_annotation_transformers">3.14.1. Annotation Transformers</a></li>
 </ul>
 </li>
 </ul>
@@ -1595,8 +1599,9 @@ public class All {
 <p>In this class, <code>method2()</code> is part of the group "checkin-test", which is defined at the class level, while <code>method1()</code> belongs to both "checkin-test" and "func-test".</p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_parameters">3.5.6. Parameters</h4>
+</div>
+<div class="sect2">
+<h3 id="_parameters">3.6. Parameters</h3>
 <div class="literalblock">
 <div class="content">
 <pre>TestNG allows you to pass an arbitrary number of parameters to each of your tests using the `@Parameters` annotation.</pre>
@@ -1618,8 +1623,8 @@ public class All {
 </li>
 </ul>
 </div>
-<div class="sect4">
-<h5 id="_parameters_from_testng_xml">Parameters from testng.xml</h5>
+<div class="sect3">
+<h4 id="_parameters_from_testng_xml">3.6.1. Parameters from testng.xml</h4>
 <div class="paragraph">
 <p>If you are using simple values for your parameters, you can specify them in your <code>testng.xml</code>:</p>
 </div>
@@ -1735,8 +1740,8 @@ public void testNonExistentParameter(@Optional("mysql") String db) {
 </ul>
 </div>
 </div>
-<div class="sect4">
-<h5 id="_parameters_with_dataproviders">Parameters with DataProviders</h5>
+<div class="sect3">
+<h4 id="_parameters_with_dataproviders">3.6.2. Parameters with DataProviders</h4>
 <div class="paragraph">
 <p>Specifying parameters in testng.xml might not be sufficient if you need to pass complex parameters, or parameters that need to be created from Java (complex objects, objects read from a property file or a database, etc&#8230;&#8203;). In this case, you can use a Data Provider to supply the values you need to test.  A Data Provider is a method on your class that returns an array of array of objects.  This method is annotated with <code>@DataProvider</code>:</p>
 </div>
@@ -1917,8 +1922,9 @@ public Object[][] getTestData() {
 <div class="paragraph">
 <p>If you want to run a few specific data providers in a different thread pool, you need to run them from a different XML file.</p>
 </div>
-<div class="sect5">
-<h6 id="_controlling_threadpool_usage">Controlling ThreadPool Usage</h6>
+</div>
+<div class="sect3">
+<h4 id="_controlling_threadpool_usage">3.6.3. Controlling ThreadPool Usage</h4>
 <div class="paragraph">
 <p>Starting from TestNG <code>7.9.0</code>, there are some additional ways in which the thread-pools that run the parallel tests can be controlled. For these new features to be consumed, update your suite file to use the <code>testng-1.1.dtd</code> (as seen below) so that your IDE can provide you with autocompletion:</p>
 </div>
@@ -1941,9 +1947,8 @@ public Object[][] getTestData() {
 </ul>
 </div>
 </div>
-</div>
-<div class="sect4">
-<h5 id="_parameters_from_system_properties">Parameters from System Properties</h5>
+<div class="sect3">
+<h4 id="_parameters_from_system_properties">3.6.4. Parameters from System Properties</h4>
 <div class="paragraph">
 <p>TestNG can be passed parameters on the command line of the Java Virtual Machine using system properties (<code>-D</code>). Parameters passed in this way are not required to be pre-defined in <code>testng.xml</code>, but will override any parameters defined there.</p>
 </div>
@@ -1967,7 +1972,6 @@ In TestNG 6.x parameters defined in testng.xml could not be overwritten by syste
 </tr>
 </table>
 </div>
-</div>
 <div class="sect4">
 <h5 id="_parameters_in_reports">Parameters in reports</h5>
 <div class="paragraph">
@@ -1980,8 +1984,9 @@ In TestNG 6.x parameters defined in testng.xml could not be overwritten by syste
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_dependencies">3.5.7. Dependencies</h4>
+</div>
+<div class="sect2">
+<h3 id="_dependencies">3.7. Dependencies</h3>
 <div class="paragraph">
 <p>Sometimes, you need your test methods to be invoked in a certain order.  Here are a few examples:</p>
 </div>
@@ -1998,8 +2003,8 @@ In TestNG 6.x parameters defined in testng.xml could not be overwritten by syste
 <div class="paragraph">
 <p>TestNG allows you to specify dependencies either with annotations or in XML.</p>
 </div>
-<div class="sect4">
-<h5 id="_dependencies_with_annotations">Dependencies with annotations</h5>
+<div class="sect3">
+<h4 id="_dependencies_with_annotations">3.7.1. Dependencies with annotations</h4>
 <div class="paragraph">
 <p>You can use the attributes <code>dependsOnMethods</code> or <code>dependsOnGroups</code>, found on the <code>@Test</code> annotation.
 There are two kinds of dependencies:</p>
@@ -2117,8 +2122,8 @@ signOut("uk")</code></pre>
 </div>
 </div>
 </div>
-<div class="sect4">
-<h5 id="_dependencies_in_xml">Dependencies in XML</h5>
+<div class="sect3">
+<h4 id="_dependencies_in_xml">3.7.2. Dependencies in XML</h4>
 <div class="paragraph">
 <p>Alternatively, you can specify your group dependencies in the <code>testng.xml</code> file. You use the <code>&lt;dependencies&gt;</code> tag to achieve this:</p>
 </div>
@@ -2139,8 +2144,8 @@ signOut("uk")</code></pre>
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_class_level_annotations">3.5.8. Class level annotations</h4>
+<div class="sect2">
+<h3 id="_class_level_annotations">3.8. Class level annotations</h3>
 <div class="paragraph">
 <p>The <code>@Test</code> annotation can be put on a class instead of a test method:</p>
 </div>
@@ -2179,8 +2184,8 @@ public class Test1 {
 <p>will make both <code>test1()</code> and <code>test2()</code> test methods but on top of that, <code>test2()</code> now belongs to the group "g1".</p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_ignoring_tests">3.5.9. Ignoring tests</h4>
+<div class="sect2">
+<h3 id="_ignoring_tests">3.9. Ignoring tests</h3>
 <div class="paragraph">
 <p>TestNG lets you ignore all the @Test methods :</p>
 </div>
@@ -2242,13 +2247,13 @@ import org.testng.annotations.Ignore;</code></pre>
 <p>This causes all the <code>@Test</code> methods to be ignored in the package <code>com.testng.master</code> and all of its sub-packages.</p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_parallelism_and_time_outs">3.5.10. Parallelism and time-outs</h4>
+<div class="sect2">
+<h3 id="_parallelism_and_time_outs">3.10. Parallelism and time-outs</h3>
 <div class="paragraph">
 <p>You can instruct TestNG to run your tests in separate threads in various ways.</p>
 </div>
-<div class="sect4">
-<h5 id="_parallel_suites">Parallel suites</h5>
+<div class="sect3">
+<h4 id="_parallel_suites">3.10.1. Parallel suites</h4>
 <div class="paragraph">
 <p>This is useful if you are running several suite files (e.g. <code>java org.testng.TestNG testng1.xml testng2.xml</code>) and you want each of these suites to be run in a separate thread. You can use the following command line flag to specify the size of a thread pool:</p>
 </div>
@@ -2261,8 +2266,8 @@ import org.testng.annotations.Ignore;</code></pre>
 <p>The corresponding ant task name is <code>suitethreadpoolsize</code>.</p>
 </div>
 </div>
-<div class="sect4">
-<h5 id="_parallel_tests_classes_and_methods">Parallel tests, classes and methods</h5>
+<div class="sect3">
+<h4 id="_parallel_tests_classes_and_methods">3.10.2. Parallel tests, classes and methods</h4>
 <div class="paragraph">
 <p>The parallel attribute on the <code>&lt;suite&gt;</code> tag can take one of following values:</p>
 </div>
@@ -2342,8 +2347,8 @@ public void testServer() {
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_rerunning_failed_tests">3.5.11. Rerunning failed tests</h4>
+<div class="sect2">
+<h3 id="_rerunning_failed_tests">3.11. Rerunning failed tests</h3>
 <div class="paragraph">
 <p>Every time tests fail in a suite, TestNG creates a file called <code>testng-failed.xml</code> in the output directory. This XML file contains the necessary information to rerun only these methods that failed, allowing you to quickly reproduce the failures without having to run the entirety of your tests.  Therefore, a typical session would look like this:</p>
 </div>
@@ -2411,8 +2416,8 @@ public class TestclassSample {
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_junit_tests">3.5.12. JUnit tests</h4>
+<div class="sect2">
+<h3 id="_junit_tests">3.12. JUnit tests</h3>
 <div class="paragraph">
 <p>TestNG can run JUnit 3 and JUnit 4 tests.  All you need to do is put the JUnit jar file on the classpath, specify your JUnit test classes in the <code>testng.classNames</code> property and set the <code>testng.junit</code> property to true:</p>
 </div>
@@ -2462,8 +2467,8 @@ public class TestclassSample {
 </ul>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_running_testng_programmatically">3.5.13. Running TestNG programmatically</h4>
+<div class="sect2">
+<h3 id="_running_testng_programmatically">3.13. Running TestNG programmatically</h3>
 <div class="paragraph">
 <p>You can invoke TestNG from your own programs very easily:</p>
 </div>
@@ -2527,8 +2532,8 @@ tng.run();</code></pre>
 <p>Please see the <a href="https://javadoc.io/doc/org.testng/testng/latest/org/testng/package-summary.html">JavaDocs</a> for the entire API.</p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_beanshell_and_advanced_group_selection">3.5.14. BeanShell and advanced group selection</h4>
+<div class="sect2">
+<h3 id="_beanshell_and_advanced_group_selection">3.14. BeanShell and advanced group selection</h3>
 <div class="paragraph">
 <p>If the <code>&lt;include&gt;</code> and <code>&lt;exclude&gt;</code> tags in <code>testng.xml</code> are not enough for your needs, you can use a <a href="https://beanshell.org/">BeanShell</a> expression to decide whether a certain test method should be included in a test run or not. You specify this expression just under the <code>&lt;test&gt;</code> tag:</p>
 </div>
@@ -2593,6 +2598,52 @@ For example <a href="https://mvnrepository.com/artifact/org.apache-extras.beansh
 </td>
 </tr>
 </table>
+</div>
+<div class="sect3">
+<h4 id="_annotation_transformers">3.14.1. Annotation Transformers</h4>
+<div class="paragraph">
+<p>TestNG allows you to modify the content of all the annotations at runtime. This is especially useful if the annotations in the source code are right most of the time, but there are a few situations where you&#8217;d like to override their value.</p>
+</div>
+<div class="paragraph">
+<p>In order to achieve this, you need to use an Annotation Transformer.</p>
+</div>
+<div class="paragraph">
+<p>An Annotation Transformer is a class that implements <a href="https://javadoc.io/doc/org.testng/testng/latest/org/testng/IAnnotationTransformer.html">IAnnotationTransformer</a></p>
+</div>
+<div class="paragraph">
+<p>Like all the other TestNG listeners, you can specify this class either on the command line or with ant:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code data-lang="bash">java org.testng.TestNG -listener MyTransformer testng.xml</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>or programmatically:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code data-lang="java">TestNG tng = new TestNG();
+tng.setAnnotationTransformer(new MyTransformer());
+// ...</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>When the method <code>transform()</code> is invoked, you can call any of the setters on the <code>ITestAnnotation</code> test parameter to alter its value before TestNG proceeds further.</p>
+</div>
+<div class="paragraph">
+<p>For example, here is how you would override the attribute invocationCount but only on the test method invoke() of one of your test classes:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code data-lang="java">public class MyTransformer implements IAnnotationTransformer {
+  public void transform(ITestAnnotation annotation, Class testClass, Constructor testConstructor, Method testMethod) {
+    if ("invoke".equals(testMethod.getName())) {
+      annotation.setInvocationCount(5);
+    }
+  }
+}</code></pre>
+</div>
 </div>
 </div>
 </div>
@@ -4107,7 +4158,7 @@ The element has one classname attribute which is mandatory, indicating the class
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2024-01-08 17:05:30 UTC
+Last updated 2024-01-09 06:34:12 UTC
 </div>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/run_prettify.min.js"></script>
